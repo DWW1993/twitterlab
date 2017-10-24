@@ -1,0 +1,23 @@
+mat-toolbar {
+    background-color: lightskyblue;
+    color: darkblue;
+}
+
+#navTitle {
+    font-size: 3em;
+}
+
+.example-fill-remaining-space {
+    flex: 1 1 auto;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+}
+
+mat-toolbar a, mat-toolbar label {
+    margin-left: 1rem;
+}
+
+mat-toolbar input {
+    background-color: lightcyan;
+    color: darkblue;
+}

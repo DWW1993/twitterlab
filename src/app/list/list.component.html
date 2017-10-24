@@ -1,0 +1,9 @@
+<mat-grid-list cols="2" rowHeight="1.75:1" class="tweets">
+  <mat-grid-tile *ngFor="let tweet of tweets" class="cardTiles">
+    <mat-card>
+        <mat-card-title>{{tweet.username}}</mat-card-title>
+        <mat-card-subtitle>from {{tweet.location}}</mat-card-subtitle>
+        <mat-card-content>"{{tweet.notTweet}}"</mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
