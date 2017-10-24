@@ -17,6 +17,10 @@ mat-toolbar a, mat-toolbar label {
     margin-left: 1rem;
 }
 
+mat-toolbar a:active {
+    color: lightblue;
+}
+
 mat-toolbar input {
     background-color: lightcyan;
     color: darkblue;

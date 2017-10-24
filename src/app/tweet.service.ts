@@ -7,8 +7,8 @@ export class TweetService {
     getTweets(): Promise<TweetInfo[]> {
         return Promise.resolve(TWEETS);
     }
-    // getTweet(id: number): Promise<TweetInfo> {
-    //     return this.getTweets()
-    //                .then(tweets => tweets.find(tweet => tweet.id === id));
-    //   }
+    getTweet(id: number): Promise<TweetInfo> {
+        return this.getTweets()
+        .then(tweets => tweets.find(tweet => tweet.id === id));
+      }
 }

@@ -14,3 +14,15 @@
 #tweetContainer {
     width: 100%;
 }
+.formContainer #tweet {
+    margin-bottom: 1rem;
+    width: 75%;
+    font-size: 1.5rem;
+    color: darkblue;
+    background-color: lightcyan;
+    border: none;
+}
+
+.formContainer #tweet:active {
+    background-color: lightblue;
+}

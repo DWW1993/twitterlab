@@ -9,8 +9,8 @@ import { TweetService } from '../tweet.service'
   styleUrls: ['./list.component.css']
 })
 export class Tweet implements OnInit {
-
   tweets: TweetInfo[];
+  
   constructor(private tweetService: TweetService) { }
   getTweets(): void {
     this.tweetService.getTweets()

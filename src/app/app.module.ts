@@ -10,6 +10,8 @@ import { TWEETS } from './tweetList'
 import { TweetService } from './tweet.service'
 import { MatCardModule } from '@angular/material';
 import { MatGridListModule } from '@angular/material';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { Tweet } from './list/list.component';
@@ -34,7 +36,8 @@ import { ChirpFormComponent } from './chirp-form/chirp-form.component';
     MatInputModule,
     MatSelectModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    AppRoutingModule
   ],
   providers: [
     TweetService

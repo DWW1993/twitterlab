@@ -1,11 +1,10 @@
 <mat-toolbar>
   <span id="navTitle">Not Twitter</span>
   <span class="example-fill-remaining-space">Do not sue,<br>this is not Twitter</span>
-  <a>Home</a>
-  <a>NotTweets</a>
+  <a routerLink="/">Home</a>
+  <a routerLink="/tweets">NotTweets</a>
   <label for="search">Search</label>
   <input id="search" type="text">
 </mat-toolbar>
-<app-chirp-form></app-chirp-form>
-<!-- ADD NEWEST TWEET HERE -->
-<app-list></app-list>
+
+<router-outlet></router-outlet>
