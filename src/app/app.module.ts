@@ -23,7 +23,7 @@ import { ChirpFormComponent } from './chirp-form/chirp-form.component';
     AppComponent,
     Tweet,
     SingleComponent,
-    ChirpFormComponent
+    ChirpFormComponent,
   ],
   imports: [
     BrowserModule,

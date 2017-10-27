@@ -4,7 +4,8 @@ import { TWEETS } from '../tweetList';
 import { TweetService } from '../tweet.service';
 import { Tweet } from '../list/list.component';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import 'rxjs/add/operator/switchMap'
+import { Location } from '@angular/common';
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'app-single',
@@ -12,16 +13,23 @@ import 'rxjs/add/operator/switchMap'
   styleUrls: ['./single.component.css']
 })
 export class SingleComponent implements OnInit {
-
-  
-  constructor(private tweetService: TweetService) {
+  @Input() tweet: TweetInfo
+  constructor(
+    private tweetService: TweetService,
+    private route: ActivatedRoute,
+    private location: Location
+  ) {
 
   }
 
   ngOnInit(): void {
-    // this.route.paramMap
-    // .switchMap((params: ParamMap) => this.tweetService.getTweet(+params.get('id')))
-    // .subscribe(hero => this.hero = hero);
+    this.route.paramMap
+    .switchMap((params: ParamMap) => this.tweetService.getTweet(+params.get('id')))
+    .subscribe(tweet => this.tweet = tweet);
+  }
+
+  goBack(): void {
+    this.location.back();
   }
 
 }

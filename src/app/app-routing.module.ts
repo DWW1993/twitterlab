@@ -12,7 +12,7 @@ const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: ChirpFormComponent },
     { path: 'tweets', component: Tweet },
-    { path: 'single:id', component: SingleComponent  }
+    { path: 'single/:id', component: SingleComponent  }
   ];
    
   @NgModule({

@@ -1,15 +1,24 @@
 <div class="formContainer">
-  <mat-form-field id="user">
-    <input #username matInput placeholder="Username" maxlength="15">
-  </mat-form-field>
-
-  <mat-form-field id="location">
-    <input #location matInput placeholder="Location" maxlength="30" #location>
-  </mat-form-field>
-  <br>
-  <mat-form-field id="tweetContainer">
-    <textarea #notTweet matInput placeholder="NotTweet" maxlength="140" rows="5"></textarea>
-    <!-- <mat-hint align="end">{{message.value.length}} / 256</mat-hint> -->
-  </mat-form-field>
-  <button id="tweet" (click)="postTweet(username.value, location.value, notTweet.value)">Post Your NotTweet!</button>
+  <form>
+    <mat-form-field id="user">
+      <input #username matInput placeholder="Username" maxlength="15">
+    </mat-form-field>
+    <mat-form-field id="location">
+      <input #location matInput placeholder="Location" maxlength="30" #location>
+    </mat-form-field>
+    <br>
+    <mat-form-field id="tweetContainer">
+      <textarea #notTweet matInput placeholder="NotTweet" maxlength="140" rows="5"></textarea>
+      <!-- <mat-hint align="end">{{message.value.length}} / 256</mat-hint> -->
+    </mat-form-field>
+    <button id="tweet" (click)="postTweet(username.value, location.value, notTweet.value)">Post Your NotTweet!</button>
+  </form>
+</div>
+<div *ngIf="tweets" class="newTweet">
+    <h1>   Newest Tweet   </h1>
+    <mat-card [routerLink]="['/single', tweets[0].id]">
+      <mat-card-title>@{{tweets[0].username}}</mat-card-title>
+      <mat-card-subtitle>from {{tweets[0].location}}</mat-card-subtitle>
+      <mat-card-content>"{{tweets[0].notTweet}}"</mat-card-content>
+    </mat-card>
 </div>

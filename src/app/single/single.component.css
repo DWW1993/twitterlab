@@ -1,0 +1,53 @@
+mat-card {
+    width: 25rem;
+    height: 15rem;
+    margin: 2rem auto;
+    color: darkblue;
+    background-color: lightskyblue;
+}
+
+mat-card mat-card-title {
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
+}
+
+mat-card mat-card-subtitle {
+    margin-left: 0.5rem;
+    font-size: 0.75rem;
+    color: lightcyan;
+}
+
+mat-card mat-card-content {
+    font-size: 1rem;
+}
+
+mat-card button {
+    margin-top: 0.75rem;
+    color: darkblue;
+    background-color: lightcyan;
+    border: none;
+    font-size: 1.5rem;
+}
+
+mat-card button:active {
+    background-color: lightblue;
+}
+
+h1 {
+    color: darkblue;
+    text-align: center;
+    margin-top: 0;
+    border-bottom: 4px solid darkblue;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 0.67em;
+}
+
+.newTweet {
+    background-color: lightblue;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+    padding-top: 0.5rem;
+}
