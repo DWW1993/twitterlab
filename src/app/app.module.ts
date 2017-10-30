@@ -37,7 +37,7 @@ import { ChirpFormComponent } from './chirp-form/chirp-form.component';
     MatSelectModule,
     MatCardModule,
     MatGridListModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [
     TweetService

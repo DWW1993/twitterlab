@@ -8,6 +8,7 @@ import { SingleComponent } from '../single/single.component';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Location } from '@angular/common'
 import { RouterLink } from '@angular/router';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-chirp-form',
@@ -16,7 +17,11 @@ import { RouterLink } from '@angular/router';
 })
 export class ChirpFormComponent implements OnInit {
   tweets: TweetInfo[];
-  constructor(private tweetService: TweetService, private router: Router) { }
+
+  constructor(
+    private tweetService: TweetService, 
+    private router: Router,
+  ) { }
 
   ngOnInit(): void {
     this.getTweets();
