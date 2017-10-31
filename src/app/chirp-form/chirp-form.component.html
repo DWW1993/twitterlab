@@ -9,7 +9,6 @@
     <br>
     <mat-form-field id="tweetContainer">
       <textarea #notTweet matInput placeholder="NotTweet" maxlength="140" rows="5"></textarea>
-      <!-- <mat-hint align="end">{{message.value.length}} / 256</mat-hint> -->
     </mat-form-field>
     <button id="tweet" (click)="postTweet(username.value, location.value, notTweet.value)">Post Your NotTweet!</button>
   </form>

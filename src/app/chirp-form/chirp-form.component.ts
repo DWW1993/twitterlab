@@ -1,12 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { TweetInfo } from '../tweetInterface'
-import { TWEETS } from '../tweetList'
-import { TweetService } from '../tweet.service'
+import { TweetInfo } from '../tweetInterface';
+import { TWEETS } from '../tweetList';
+import { TweetService } from '../tweet.service';
 import { Tweet } from '../list/list.component';
-import { Router } from '@angular/router'
+import { Router } from '@angular/router';
 import { SingleComponent } from '../single/single.component';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import { Location } from '@angular/common'
+import { Location } from '@angular/common';
 import { RouterLink } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
